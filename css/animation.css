@@ -1,0 +1,32 @@
+.animation {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: marquee 20s linear infinite;
+    -moz-animation: marquee 20s linear infinite;
+    -o-animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.animation:hover {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        -moz-transform: translate3d(-50%, 0, 0);
+        -o-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
